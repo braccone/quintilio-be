@@ -29,6 +29,10 @@ func main() {
 	// init game
 	game := models.NewGame(players)
 
-	game.PrintPlayers()
+	// game.PrintPlayers()
+
+	for i := 0; i < len(game.Players); i++ {
+		game.FirstPhase()
+	}
 
 }
